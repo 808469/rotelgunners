@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/Index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Computer Engineer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      font-size: 20px;
+      color: #bbbbbb;
+      margin-bottom: 40px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #007bff;
+      border: 2px solid #007bff;
+    }
+
+    .btn-outline:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Hi, I'm a Computer Engineer</h1>
+    <p>I repair computer, troubleshoot, Networking, Installation and Upgrade System.</p>
+    <div class="button-group">
+      <button class="btn btn-primary">Get in Touch</button>
+      <button onclick="document.getElementById(&#39;contactSection&#39;).style.display=&#39;block&#39;">
+  Get in Touch
+</button>
+
+<!-- Hidden Content That Appears Below -->
+<div id="contactSection" style="display: block; margin-top: 20px; text-align: center;">
+  <h2>Contact Me</h2>
+  <p>Email: gunnersrote@gmail.com</p>
+  <p>Phone: +234 08084695448, 08142780080</p>
+  <p> Office Address: Alhaja Abibatu Iponri Market Surulere Lagos</p>
+  <p> Home Address: 7, Aiyepe Street, off bajulaiye street Shomolu Lagos.</p>
+  <button onclick="document.getElementById(&#39;contactSection&#39;).style.display=&#39;none&#39;">Close</button>
+</div>
+      <button class="btn btn-outline">View Projects</button>
+      
+      <!-- View Projects Button -->
+<button onclick="document.getElementById(&#39;projectSection&#39;).style.display=&#39;block&#39;">
+  View Projects
+</button>
+
+<div id="projectSection" style="display: none; margin-top: 20px; text-align: center;">
+  <figure>
+<img src="./Computer Engineer Portfolio_files/image.jpeg" alt="My Project" title="A laptop system" width="600" height="auto">
+<figcaption>
+  my works
+</figcaption>
+  </figure>
+  <figure>
+  <img src="./Computer Engineer Portfolio_files/image (2).jpg" alt="My Project" title="my works" width="600" height="auto">
+  <figcaption>
+    A laptop system
+  </figcaption>
+  </figure>
+  
+<figure>
+  <img src="./Computer Engineer Portfolio_files/image (3).jpg" alt="My Project" title="Me doing Installation" width="600" height="auto">
+  <figcaption>
+    Installation ongoing
+  </figcaption>
+  </figure>
+  
+  <!-- Close Button -->
+  <button onclick="document.getElementById(&#39;projectSection&#39;).style.display=&#39;none&#39;">
+    close
+  </button>
+</div>
+
+
+<div id="imageContainer" style="display: none; margin-top: 20px; text-align: center;">
+  <img src="./Computer Engineer Portfolio_files/image.jpeg" alt="my work" width="600">
+</div>
+    </div>
+  </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
